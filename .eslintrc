@@ -1,0 +1,6 @@
+{
+  "extends": "syndrobox/lib/node",
+  "rules": {
+      "import/no-commonjs": "off",
+  }
+}

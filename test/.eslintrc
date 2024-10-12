@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "syndrobox/lib/mocha",
+  ],
+  "rules": {
+    "mocha/no-mocha-arrows": 'off',
+    "import/no-commonjs": 'off',
+  }
+}

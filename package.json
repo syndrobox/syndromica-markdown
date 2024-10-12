@@ -1,0 +1,43 @@
+{
+  "name": "syndromica-markdown",
+  "version": "3.0.0",
+  "description": "A markdown-it module pre-configured for use in Syndromica",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --force && webpack --config webpack.config.js --mode=${TARGET_ENV:-production}",
+    "build:dev": "TARGET_ENV=development npm run build",
+    "lint": "eslint .",
+    "test": "npm run lint && mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syndrobox/syndromica-markdown.git"
+  },
+  "keywords": [
+    "syndromica",
+    "syndrobox",
+    "markdown",
+    "markdown-it"
+  ],
+  "author": "Syndrobox",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/syndrobox/syndromica-markdown/issues"
+  },
+  "homepage": "https://github.com/syndrobox/syndromica-markdown#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-syndrobox": "^6.2.0",
+    "eslint-plugin-mocha": "^6.3.0",
+    "mocha": "^7.1.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "syndromica-markdown-emoji": "1.2.4",
+    "markdown-it": "10.0.0",
+    "markdown-it-link-attributes": "3.0.0",
+    "markdown-it-linkify-images": "^1.1.1"
+  }
+}
